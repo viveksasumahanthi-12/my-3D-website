@@ -1,0 +1,140 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h1 {
+  font-weight: 700;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  padding: 120px 0;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+/* ===== Projects Section ===== */
+#projects {
+  background: #f8f9fa;
+}
+
+#projects img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projects img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Info Cards ===== */
+.card-sections .info-card {
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  min-height: 250px;
+}
+.card-sections .info-card:hover {
+  transform: translateY(-8px);
+}
+.card-one {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+.card-two {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+.card-three {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+.card-four {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+/* ===== About Section ===== */
+.about-section {
+  background: #222;
+}
+
+.about-card {
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+.about-img {
+  width: 240px;
+  height: auto;
+  border-radius: 15px;
+  border: 4px solid white;
+}
+
+/* 🔥 Bright About Me Heading */
+.about-section h2 {
+  color: #ffcc00; /* bright golden yellow */
+  text-shadow: 0px 0px 8px rgba(255, 204, 0, 0.7);
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  background: #e6f7ff;
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+  .about-img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .about-card {
+    text-align: center;
+    padding: 20px;
+  }
+  .about-img {
+    margin-top: 20px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .hero-section {
+    padding: 70px 0;
+  }
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+  #projects img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .about-img {
+    width: 150px;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
